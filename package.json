@@ -1,0 +1,26 @@
+{
+
+  "scripts": {
+
+    "test": "nightwatch"
+
+  },
+
+  "dependencies": {
+
+    "nightwatch": "^2.3.4",
+
+    "saucelabs": "^7.2.0"
+
+  },
+
+  "devDependencies": {
+
+    "chromedriver": "^105.0.0",
+
+    "geckodriver": "^3.0.2"
+
+  }
+
+}
+
