@@ -120,8 +120,8 @@ module.exports = {
       // https://wiki.saucelabs.com/display/DOCS/Test+Configuration+Options
       desiredCapabilities: {
         'sauce:options': {
-          username: '',
-          accessKey: '',
+          username: '${SAUCE_USERNAME}',
+          accessKey: '${SAUCE_ACCESS_KEY}',
           screenResolution: '1280x1024'
           // https://docs.saucelabs.com/dev/cli/sauce-connect-proxy/#--region
           // region: 'us-west-1'
@@ -145,7 +145,7 @@ module.exports = {
       desiredCapabilities: {
         browserName: 'chrome',
         browserVersion: '105',
-        platformName: 'Windows 11',
+        platformName: 'Windows 10',
         'goog:chromeOptions': {
           w3c: true
         }
