@@ -29,7 +29,7 @@ module.exports = {
   // plugins: [],
   
   // See https://nightwatchjs.org/guide/concepts/test-globals.html
-  globals_path: '',
+  globals_path: 'tests/globals.js',
 
   webdriver: {},
 
@@ -120,8 +120,8 @@ module.exports = {
       // https://wiki.saucelabs.com/display/DOCS/Test+Configuration+Options
       desiredCapabilities: {
         'sauce:options': {
-          username: '${SAUCE_USERNAME}',
-          accessKey: '${SAUCE_ACCESS_KEY}',
+          username: '',
+          accessKey: '',
           screenResolution: '1280x1024'
           // https://docs.saucelabs.com/dev/cli/sauce-connect-proxy/#--region
           // region: 'us-west-1'
@@ -144,8 +144,8 @@ module.exports = {
       extends: 'saucelabs',
       desiredCapabilities: {
         browserName: 'chrome',
-        browserVersion: 'latest',
-        platformName: 'Windows 10',
+        browserVersion: '105',
+        platformName: 'Windows 11',
         'goog:chromeOptions': {
           w3c: true
         }
